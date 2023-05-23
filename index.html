@@ -9,106 +9,66 @@
       margin: 0;
       padding: 0;
       overflow-x: hidden;
+      background-color: #FFD700;
+      color: #8B4513;
     }
-    @media screen and (max-device-width: 500px) {
-      html {
-        font-size:7.5px;
-      }
-      #sidebar {
-        font-size:2.5rem;
-      }
+    #sidebar {
+      position:fixed;
+      top:0;
+      left:0;
+      background-color:#556B2F;
+      height:100%;
+      width:15vw;
     }
-    @media screen and (min-device-width: 500px) {
-      html {
-        font-size:12px;
-      }
-      #sidebar {
-        font-size:1.5rem;
-      }
+    #sidebar div {
+      padding-top:10vh;
+      padding-left:5vw;
     }
-    @media screen and (min-device-width:800px) {
-      html {
-        font-size:16px;
-      }
-      #sidebar {
-        font-size:1.0rem;
-      }
+    #sidebar a {
+      color: #FFD700;
     }
-    @media screen and (min-device-width:1200px) {
-      html {
-        font-size:17px;
-      }
-      #sidebar {
-        font-size:1.0rem;
-      }
+    .content {
+      width:80vw;
+      margin: 10vh auto;
+      padding-left:20vw;
     }
-    body {
-      overflow: auto;
-      font-family: 'Lucida Sans Unicode', sans-serif;
-      font-size: 100%;
-    }
-    a:link, a:visited {
-      text-decoration: none;
-    }
-    a:hover, a:active {
-      text-decoration: underline;
-    }
-    .image {
-      width:200px;
-      float:left;
-      margin-right:20px;
-    }
-    .research_item {
-      overflow:hidden;
-      padding-right: 75px;
+    .profile {
+      width:90%;
+      min-height:268px;
       max-width:1000px;
-      padding-bottom: 40px;
     }
-    h1 {
-      font-size: 2.0rem;
+    .profile img {
+      width:30vw;
+      border-radius:15px;
+      float:right;
+      margin-left:3vw;
     }
-    h2 {
-      padding-top: 40px;
-      margin-bottom: 0px;
-      font-size: 1.5rem;
+    .profile h1 {
+      font-size: 2em;
     }
-    h3 {
-      margin-left: 220px;
-      font-size: 1.4rem;
-      font-weight: bold;
-    }
-    p {
-      margin-top: 0px;
-      overflow:hidden;
-      font-size:1.0rem;
-    }
-    li {
-      font-size:1.0rem;
-      max-width:1000px;
+    .profile p {
+      font-size:1em;
     }
   </style>
 </head>
 <body>
-  <div id="sidebar" style="position:fixed; top:0; left:0; background-color:#ccf9f8; height:100%; width:150px;">
-    <div style="padding-top:135px; padding-left:50px;">
+  <div id="sidebar">
+    <div>
       <a href="https://www.linkedin.com/in/kiynchin/">LinkedIn</a><br>
       <!--<a href="resume.pdf">Resume</a><br>-->
       <a href="https://github.com/kiynchin">Github</a><br>
       <a href="https://scholar.google.com/citations?hl=en&user=eYpb0EgAAAAJ">Google Scholar</a><br><br>
     </div>
   </div>
-  <div style="min-width:600px; width:80%; margin: 10px auto; padding-left:200px; margin-bottom:100px">
-    <div style="width:90%; min-width:600px; min-height:268px; max-width:1000px;">
-      <img src="images/keene-chin-professional.jpg" width="225px" style="position:relative; margin-top: 40px; border-radius:15px; float:right; margin-left:30px;">
+  <div class="content">
+    <div class="profile">
+      <img src="images/keene-chin-professional.jpg">
       <div>
         <h1>Kiyn Chin</h1>
-        <p><a href="mailto:kiyn@cmu.edu">kiyn@cmu.edu</a> <br><br>
+        <p>
+          <a href="mailto:kiyn@cmu.edu">kiyn@cmu.edu</a> <br><br>
           I am a PhD candidate in the <a href="http://ri.cmu.edu">Robotics Institute</a> at <a href="http://cmu.edu">Carnegie Mellon University</a>. 
-          I work on learning control for inexpensive and soft robots in the <a href="http://sml.me.cmu.edu/">Soft Machines Lab</a> with 
+          I work on soft robots in the <a href="http://sml.me.cmu.edu/">Soft Machines Lab</a> with 
           <a href="https://www.meche.engineering.cmu.edu/faculty/majidi.html">Dr. Carmel Majidi</a>. My current research focus is on nonstationary 
-          dynamics and memory-based learning.</p>
-      </div>
-    </div>
-  </div>
-</body>
-</html>
+          dynamics of biodegradable soft materials and machine learning for the control of inexpensive robotic systems.
+        </
